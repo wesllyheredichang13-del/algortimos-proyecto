@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Juego</title>
+</head>
+<body>
+<div class="title">DIFICULTAD</div>
+    <div class="main-space">
+        <button class="start-button" onclick="startGame('facil')">FACIL</button>
+        <button class="start-button" onclick="startGame('intermedio')">INTERMEDIO</button>
+        <button class="start-button" onclick="startGame('dificil')">DIFICIL</button>
+    </div>
+<script>
+    // Función para redirigir a 'juego.html' con el nivel seleccionado
+    function startGame(dificultad) {
+      window.location.href = `../MAIN GAME/GAME.HTML?nivel=${dificultad}`; // Se pasa el parámetro de dificultad en la URL
+    }
+</script>    
+</body>
+</html>
